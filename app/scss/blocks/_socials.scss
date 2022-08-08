@@ -1,0 +1,9 @@
+.socials {
+    display: flex;
+    align-items: center;
+    &__link {
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+}

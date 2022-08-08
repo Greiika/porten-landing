@@ -1,0 +1,130 @@
+// footer
+
+.footer {
+	background-image: url(../images/footer/bg.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+
+	// .footer__inner
+
+	&__inner {
+		padding: 80px 0 100px;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		//display: flex;
+		//flex-wrap: wrap;
+		column-gap: 30px;
+		row-gap: 30px;
+		@media (max-width:991px) {
+			grid-template-columns: repeat(2, 1fr);
+			
+		}
+		@media (max-width:644px) {
+			grid-template-columns: repeat(1, 1fr);
+			justify-content: center;
+			padding: 60px 0 75px;
+		}
+		@media (max-width:375px) {
+			padding: 40px 0 45px;
+		}
+
+	}
+
+	&__title {
+		font-family: 'Playfair Display';
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 28px;
+		text-transform: uppercase;
+		margin-bottom: 40px;
+		color: $colors;
+		@media (max-width:991px) {
+			margin-bottom: 30px;
+		}
+	}
+
+}
+
+// ends footer
+
+// about-shops
+
+.about-shops {
+	max-width: 350px;
+}
+
+// ends about-shops
+
+// categories
+
+.categories {
+	max-width: 350px;
+
+	// .categories__buttons
+
+	&__buttons {
+		display: flex;
+		gap: 20px;
+		flex-wrap: wrap;
+	}
+
+	// .categories__button
+
+	&__button {
+		padding: 10px 20px;
+		color: #D0D0D0;
+		background: #0F0F0F;
+		border: 1px solid rgba(255, 255, 255, .5);
+		cursor: pointer;
+	}
+}
+
+// ends categories
+
+// mailing
+
+.mailing {
+	max-width: 350px;
+
+	// .mailing__text
+
+	&__text {
+		margin-bottom: 37px;
+	}
+}
+.form {
+	position: relative;
+
+	// .form__input
+
+	&__input {
+		width: 100%;
+		background: rgba(255, 255, 255, 0.4);
+		padding: 10px 150px 10px 15px;
+		color: $colors;
+		&::placeholder {
+			color: #969696;
+		}
+	}
+
+	// .form__btn
+
+	&__btn {
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 1;
+		padding: 10px 20px;
+		color: $colors;
+		background-color: #0F0F0F;
+		cursor: pointer;
+		@media (max-width:375px) {
+			position: relative;
+			width: 100%;
+		}
+	}
+}
+
+// ends mailing
+

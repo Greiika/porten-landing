@@ -1,0 +1,23 @@
+// base
+
+@import './base/reset';
+@import './base/vars';
+@import './base/global';
+@import './base/fonts';
+
+// blocks
+
+@import './blocks/header';
+@import './blocks/socials';
+@import './blocks/collection';
+@import './blocks/catalog';
+@import './blocks/brands';
+@import './blocks/footer';
+@import './blocks/copyright';
+@import './blocks/nav';
+@import './blocks/menu';
+
+// медиа-запросы
+
+@import './base/media';
+
